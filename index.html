@@ -1,641 +1,650 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="zh_CN" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="zh_CN" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="zh_CN">
-<!--<![endif]-->
-<head>
-  <meta charset="utf-8">
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <title>Seniex</title>
 
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="description" content="We are here to help you.
-	  Lorem ipsum dolor sit amet, dolore eiusmod quis
-	  tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis
-	  iste natus error sit">
-<meta property="og:type" content="website">
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-loading-bar.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Seniex">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://seniex.github.io/index.html">
 <meta property="og:site_name" content="Seniex">
-<meta property="og:description" content="We are here to help you.
-	  Lorem ipsum dolor sit amet, dolore eiusmod quis
-	  tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis
-	  iste natus error sit">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/frontend-slider/ipadmini.png">
-<meta property="og:image" content="http://yoursite.com/asset1.png">
-<meta property="og:image" content="http://yoursite.com/asset3.jpg">
-<meta property="og:image" content="http://yoursite.com/asset1.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/frontend-slider/iphone_right.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img1.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img2.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img3.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img4.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img5.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img6.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img3.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img4.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img6.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/works/img1.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/people/img1-small.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/people/img5-small.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/people/img2-small.jpg">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_1_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_1.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_2_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_2.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_3_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_3.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_4_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_4.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_5_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_5.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_6_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_6.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_7_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_7.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_8_gray.png">
-<meta property="og:image" content="http://yoursite.com/metronic/assets/pages/img/clients/client_8.png">
-<meta property="og:updated_time" content="2016-07-28T06:33:57.814Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Seniex">
-<meta name="twitter:description" content="We are here to help you.
-	  Lorem ipsum dolor sit amet, dolore eiusmod quis
-	  tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis
-	  iste natus error sit">
-<meta name="twitter:image" content="http://yoursite.com/metronic/assets/pages/img/frontend-slider/ipadmini.png">
-  
-    <link rel="alternative" href="/atom.xml" title="Seniex" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.ico">
-  
-    
-  <meta content="{{ title }}" name="description">
-  <meta content="{{ title }}" name="keywords">
-  <meta content="{{ title }}" name="author">
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
 
-  <!-- Global styles START -->   
-  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Global styles END --> 
-   
-  <!-- Page level plugin styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
-  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
-  <!-- Page level plugin styles END -->
 
-  <!-- Theme styles START -->
-  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
-  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
-  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/red.css">
-  <link rel="stylesheet" href="/css/theme-styles.css">
-  <!-- Theme styles END -->
+
+
+
+  <link rel="canonical" href="https://seniex.github.io/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Seniex</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body class="corporate">
-  <!-- BEGIN TOP BAR -->
-<div class="pre-header">
-  <div class="container">
-    <div class="row">
-      <!-- BEGIN TOP BAR LEFT PART -->
-      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
-	<ul class="list-unstyled list-inline">
-	  <li><i class="fa fa-phone"></i><span>undefined</span></li>
-	  <li><i class="fa fa-envelope-o"></i><span>comsenz@qq.com</span></li>
-	</ul>
-      </div>
-      <!-- END TOP BAR LEFT PART -->
-      <!-- BEGIN TOP BAR MENU -->
-      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
-	<ul class="list-unstyled list-inline pull-right">
-	  <li>Sign In</li>
-	</ul>
-      </div>
-      <!-- END TOP BAR MENU -->
-    </div>
-  </div>        
-</div>
-<!-- END TOP BAR -->
-<!-- BEGIN HEADER -->
-<div class="header">
-  <div class="container">
-    <!--<a class="site-logo" href="/" id="logo">Seniex</a>-->
-
-    <a class="site-logo" href="/">
-      <img src="/metronic/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd">
-    </a>
-
-    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-
-    <!-- BEGIN NAVIGATION -->
-    <div class="header-navigation pull-right font-transform-inherit">
-      <ul>
-	
-	<li class="active">
-	  <a  href="/">Home</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/projects/">Projects</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/blog/">Blog</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/contact/">Contact</a>
-	</li>
-	
-	<li class="">
-	  <a  href="/about/">About</a>
-	</li>
-	
-	<!-- BEGIN TOP SEARCH -->
-	<li class="menu-search">
-	  <span class="sep"></span>
-	  <i class="fa fa-search search-btn"></i>
-	  <div class="search-box">
-	    <form action="#">
-	      <div class="input-group">
-		<input type="text" placeholder="Search" class="form-control st-default-search-input">
-		<span class="input-group-btn">
-		  <button class="btn btn-primary" type="submit">Search</button>
-		</span>
-	      </div>
-	    </form>
-	  </div> 
-	</li>
-	<!-- END TOP SEARCH -->
-      </ul>
-    </div>
-    <!-- END NAVIGATION -->
-  </div>
-</div>
-<!-- Header END -->
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
-  <div class="container-fluid flush-with-header">
-  <div class="row margin-bottom-40 row-corporate bg-light-1">
-    <div class="container">
-      <div class="col-xs-8 col-sm-6 row-corporate-text-container">
-	<div class="row-corporate-text">
-	  <h1>We are here to <b class="require">help you</b>.</h1>
-	  <h4 class="wow fadeIn">Lorem ipsum dolor sit amet, dolore eiusmod quis
-	  tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis
-	  iste natus error sit voluptatem.</h4>
-	</div>
-      </div>
-      <div class="col-xs-4 col-sm-6">
-	<img src="/metronic/assets/pages/img/frontend-slider/ipadmini.png">
-      </div>
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Seniex</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+    
   </div>
-</div>
-<div class="container">
-    <div class="row service-box margin-bottom-40">
-      <div class="col-md-4 col-sm-4">
-	<div class="service-box-heading">
-	  <em><i class="fa fa-location-arrow blue wow rollIn"></i></em>
-	  <span>Multipurpose Template</span>
-	</div>
-	<p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.</p>
-	  <img class="img-responsive" src="/asset1.png">
-      </div>
-      <div class="col-md-4 col-sm-4">
-	<div class="service-box-heading">
-	  <em><i class="fa fa-check red wow rollIn"></i></em>
-	  <span>Well Documented</span>
-	</div>
-	<p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.</p>
-	  <img class="img-responsive" src="/asset3.jpg">
-      </div>
-      <div class="col-md-4 col-sm-4">
-	<div class="service-box-heading">
-	  <em><i class="fa fa-compress green wow rollIn"></i></em>
-	  <span>Responsive Design</span>
-	</div>
-	<p>Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde omnis iste natus error sit voluptatem.</p>
-	  <img class="img-responsive" src="/asset1.jpg">
-      </div>
-    </div>
-    </div>
-<div class="container-fluid">
-<div class="row margin-bottom-40 row-corporate bg-light-2">
-  <div class="container">
-    <div class="col-xs-4 col-xs-pull-4 col-sm-pull-0 col-sm-6 wow fadeIn">
-      <img src="/metronic/assets/pages/img/frontend-slider/iphone_right.png">
-    </div>
-    <div class="col-xs-6 row-corporate-text-container">
-    <div class="row-corporate-text">
-      <h1>We're committed to our <b class="wow fadeIn require">process</b>.</h1>
-      <h4 class="wow fadeIn">Lorem ipsum dolor sit amet, dolore eiusmod quis
-      tempor incididunt ut et dolore Ut veniam unde nostrudlaboris. Sed unde
-      omnis iste.</h4>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
 
-<div class="main">
-  <div class="container">
-    <!-- BEGIN STEPS -->
-    <div class="row margin-bottom-40 front-steps-wrapper front-steps-count-3 wow
-    fadeIn">
-      <div class="col-md-4 col-sm-4 front-step-col">
-	<div class="front-step front-step1">
-	  <h2>Goal definition</h2>
-	  <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
-	</div>
-      </div>
-      <div class="col-md-4 col-sm-4 front-step-col">
-	<div class="front-step front-step2">
-	  <h2>Analyse</h2>
-	  <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
-	</div>
-      </div>
-      <div class="col-md-4 col-sm-4 front-step-col">
-	<div class="front-step front-step3">
-	  <h2>Implementation</h2>
-	  <p>Lorem ipsum dolor sit amet sit consectetur adipisicing eiusmod tempor.</p>
-	</div>
-      </div>
-    </div>
-    <!-- END STEPS -->
-
-    <!-- BEGIN RECENT WORKS -->
-    <div class="row recent-work margin-bottom-40">
-      <div class="col-md-3">
-	<h2 class="wow fadeIn"><a href="/projects/">Recent Work</a></h2>
-	<p class="wow fadeIn">Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde voluptatem. Sed unde omnis iste natus error sit voluptatem.</p>
-      </div>
-      <div class="col-md-9">
-	<div class="owl-carousel owl-carousel3">
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img1.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img1.jpg" class="fancybox-button" title="Project Name #1" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img2.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img2.jpg" class="fancybox-button" title="Project Name #2" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img3.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img4.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img4.jpg" class="fancybox-button" title="Project Name #4" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img5.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img5.jpg" class="fancybox-button" title="Project Name #5" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img6.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img6.jpg" class="fancybox-button" title="Project Name #6" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img3.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img3.jpg" class="fancybox-button" title="Project Name #3" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	  <div class="recent-work-item">
-	    <em>
-	      <img src="metronic/assets/pages/img/works/img4.jpg" alt="Amazing Project" class="img-responsive">
-	      <a href="portfolio-item.html"><i class="fa fa-link"></i></a>
-	      <a href="metronic/assets/pages/img/works/img4.jpg" class="fancybox-button" title="Project Name #4" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-	    </em>
-	    <a class="recent-work-description" href="/projects/#project1">
-	      <strong>Amazing Project</strong>
-	      <b>Agenda corp.</b>
-	    </a>
-	  </div>
-	</div>       
-      </div>
-    </div>   
-    <!-- END RECENT WORKS -->
-
-    <!-- BEGIN TABS AND TESTIMONIALS -->
-    <div class="row mix-block margin-bottom-40">
-      <!-- TABS -->
-      <div class="col-md-7 tab-style-1">
-	<ul class="nav nav-tabs">
-	  <li class="active"><a href="#tab-1" data-toggle="tab">Multipurpose</a></li>
-	  <li><a href="#tab-2" data-toggle="tab">Documented</a></li>
-	  <li><a href="#tab-3" data-toggle="tab">Responsive</a></li>
-	  <li><a href="#tab-4" data-toggle="tab">Clean & Fresh</a></li>
-	</ul>
-	<div class="tab-content">
-	  <div class="tab-pane row fade in active" id="tab-1">
-	    <div class="col-md-3 col-sm-3">
-	      <a href="metronic/assets/pages/img/works/img6.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
-		<img class="img-responsive" src="metronic/assets/pages/img/works/img6.jpg" alt="">
-	      </a>
-	    </div>
-	    <div class="col-md-9 col-sm-9">
-	      <p class="margin-bottom-10">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.</p>
-	      <p><a class="more" href="javascript:;" target="_blank" rel="external">Read more <i class="icon-angle-right"></i></a></p>
-	    </div>
-	  </div>
-	  <div class="tab-pane row fade" id="tab-2">
-	    <div class="col-md-9 col-sm-9">
-	      <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia..</p>
-	    </div>
-	    <div class="col-md-3 col-sm-3">
-	      <a href="metronic/assets/temp/works/img10.jpg" class="fancybox-button" title="Image Title" data-rel="fancybox-button">
-		<img class="img-responsive" src="metronic/assets/pages/img/works/img1.jpg" alt="">
-	      </a>
-	    </div>
-	  </div>
-	  <div class="tab-pane fade" id="tab-3">
-	    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
-	  </div>
-	  <div class="tab-pane fade" id="tab-4">
-	    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
-	  </div>
-	</div>
-      </div>
-      <!-- END TABS -->
-
-      <!-- TESTIMONIALS -->
-      <div class="col-md-5 testimonials-v1">
-	<div id="myCarousel" class="carousel slide">
-	  <!-- Carousel items -->
-	  <div class="carousel-inner">
-	    <div class="active item">
-	      <blockquote><p>Denim you probably haven't heard of. Lorem ipsum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.</p></blockquote>
-	      <div class="carousel-info">
-		<img class="pull-left" src="metronic/assets/pages/img/people/img1-small.jpg" alt="">
-		<div class="pull-left">
-		  <span class="testimonials-name">Lina Mars</span>
-		  <span class="testimonials-post">Commercial Director</span>
-		</div>
-	      </div>
-	    </div>
-	    <div class="item">
-	      <blockquote><p>Raw denim you Mustache cliche tempor, williamsburg carles vegan helvetica probably haven't heard of them jean shorts austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p></blockquote>
-	      <div class="carousel-info">
-		<img class="pull-left" src="metronic/assets/pages/img/people/img5-small.jpg" alt="">
-		<div class="pull-left">
-		  <span class="testimonials-name">Kate Ford</span>
-		  <span class="testimonials-post">Commercial Director</span>
-		</div>
-	      </div>
-	    </div>
-	    <div class="item">
-	      <blockquote><p>Reprehenderit butcher stache cliche tempor, williamsburg carles vegan helvetica.retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.</p></blockquote>
-	      <div class="carousel-info">
-		<img class="pull-left" src="metronic/assets/pages/img/people/img2-small.jpg" alt="">
-		<div class="pull-left">
-		  <span class="testimonials-name">Jake Witson</span>
-		  <span class="testimonials-post">Commercial Director</span>
-		</div>
-	      </div>
-	    </div>
-	  </div>
-
-	  <!-- Carousel nav -->
-	  <a class="left-btn" href="#myCarousel" data-slide="prev"></a>
-	  <a class="right-btn" href="#myCarousel" data-slide="next"></a>
-	</div>
-      </div>
-      <!-- END TESTIMONIALS -->
-    </div>                
-    <!-- END TABS AND TESTIMONIALS -->
-    <!-- BEGIN BLOCKQUOTE BLOCK -->   
-    <div class="row quote-v1 margin-bottom-40 ">
-      <div class="col-md-9">
-	<span>Metronic - The Most Complete &amp; Popular Admin &amp; Frontend Theme</span>
-      </div>
-      <div class="col-md-3 text-right">
-	<a class="btn-transparent" href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin" target="_blank"><i class="fa fa-rocket margin-right-10"></i>Preview Admin</a>
-      </div>
-    </div>
-    <!-- END BLOCKQUOTE BLOCK -->
-
-
-    <!-- BEGIN CLIENTS -->
-    <div class="row margin-bottom-40 our-clients">
-      <div class="col-md-3">
-	<h2><a href="javascript:;" target="_blank" rel="external">Our Clients</a></h2>
-	<p>Lorem dipsum folor margade sitede lametep eiusmod psumquis dolore.</p>
-      </div>
-      <div class="col-md-9">
-	<div class="owl-carousel owl-carousel6-brands">
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_1_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_1.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_2_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_2.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_3_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_3.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_4_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_4.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_5_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_5.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_6_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_6.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_7_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_7.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>
-	  <div class="client-item">
-	    <a href="javascript:;" target="_blank" rel="external">
-	      <img src="metronic/assets/pages/img/clients/client_8_gray.png" class="img-responsive" alt="">
-	      <img src="metronic/assets/pages/img/clients/client_8.png" class="color-img img-responsive" alt="">
-	    </a>
-	  </div>                  
-	</div>
-      </div>          
-    </div>
-    <!-- END CLIENTS -->
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
 
 
 
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
 
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
 
-    <!-- BEGIN PRE-FOOTER -->
-    <div class="pre-footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN BOTTOM ABOUT BLOCK -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>About Us</h2>
-            <p>Computer Lab is a software development and marketing company based in Brooklyn, New York. <br><br> Computer Lab was founded in 2015, and is focused on so on and so forth.</p>
-          </div>
-          <!-- END BOTTOM ABOUT BLOCK -->
+  
 
-          <!-- BEGIN BOTTOM CONTACTS -->
-          <div class="col-md-4 col-sm-6 pre-footer-col">
-            <h2>Contact</h2>
-            <address class="margin-bottom-40">
-              null<br>
-              null<br>
-              null<br>
-              Phone: undefined<br>
-              Email: <a href="mailto:comsenz@qq.com">comsenz@qq.com</a><br>
-            </address>
-          </div>
-          <!-- END BOTTOM CONTACTS -->
-
-	
-
-	
-        </div>
-      </div>
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
-    <!-- END PRE-FOOTER -->
-
-    <!-- BEGIN FOOTER -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <!-- BEGIN COPYRIGHT -->
-          <div class="col-md-6 col-sm-6 padding-top-10">
-                  &copy; 2018 Seniex<br>
- <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
-          </div>
-          <!-- END COPYRIGHT -->
-	  <!-- BEGIN SOCIAL -->
-<div class="col-md-6 col-sm-6">
-  <ul class="social-footer list-unstyled list-inline pull-right">
-    
-      <li><a href="https://github.com/ptsteadman"><i class="fa fa-github"></i></a></li>
-    
-      <li><a href="https://twitter.com/ptsteadman"><i class="fa fa-twitter"></i></a></li>
-    
-      <li><a href="https://www.facebook.com/ptsteadman"><i class="fa fa-facebook"></i></a></li>
-    
-      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
-    
-      <li><a href="https://linkedin.com/in/ptsteadman"><i class="fa fa-linkedin"></i></a></li>
-    
-      <li><a href="http://stackoverflow.com/users/2480493/patrick-steadman"><i class="fa fa-stackoverflow"></i></a></li>
-    
-  </ul>  
+  </div>
+  <div id="local-search-result"></div>
 </div>
-<!-- END SOCIAL -->
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://seniex.github.io/2018/06/11/zhongguofangshi-shaozihua-quxiaoshengyuxianzhi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Seniex">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Seniex">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/11/zhongguofangshi-shaozihua-quxiaoshengyuxianzhi/" itemprop="url">
+                  浅谈中国取消生育限制、日本少子化、中国房产。
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-11 15:55:58 / 修改时间：20:53:30" itemprop="dateCreated datePublished" datetime="2018-06-11T15:55:58+08:00">2018-06-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/杂记/" itemprop="url" rel="index"><span itemprop="name">杂记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
 
         </div>
-      </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1><br>    <strong>导语</strong><br></h1>
+
+<pre><code>前年如火如荼的房市，去年开始普遍看衰。5月22日，一则“中国取消生育限制”的消息在外媒疯传。日本经历了“经济大萧条”后出现的少子化。
+</code></pre><h1><br>日本少子化<br></h1><br>      日本在广场协议后，由于种种原因，导致日本经济大萧条，同时导致了少子化。首先我们来回顾一下广场协议的由来。<br><br><h2><br>协议背景<br></h2><br><br><img src="/2018/06/11/zhongguofangshi-shaozihua-quxiaoshengyuxianzhi/640px-Federal_Funds_Rate_effective.svg.png" alt="logo"><br><br>    ①  卡特为了阻止高通膨、高失业率、经济增长缓慢，曾经提高利率高至20%，导致美境内民间资本投机行为大量减少，资金回归银行。<br><br>    ②  同时美出口额的下降和进口额的上升，出现了贸易逆差。<br><br>    ③  前者导致政府的财政赤字不断扩大，后者导致失业率不断提高。<br><br>    ④  里根上任后，为了解决前任遗留的经济问题，推行了一系列的政策。政府财政赤字由于美国高通膨、高失业率影响，无法轻易解决，当务之急是解决贸易逆差。<br><br>    ⑤  为了将贸易逆差降低，美元贬值是一条立竿见影的方法。当时各国外汇储备依旧以美元为主，但随着布林顿森林体系的崩溃，各国无法通过将美元兑黄金来维持外汇。牙买加体系中，美元依旧外汇储备主体，美元贬值导致各国外汇储备降低。各国自然不会让美元自由落体，而是寻求了一个各国都可以接受的方式。<br><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/11/zhongguofangshi-shaozihua-quxiaoshengyuxianzhi/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
     </div>
-    <!-- END FOOTER -->
 
-  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
-<!--[if lt IE 9]>
-<script src="/metronic/assets/plugins/respond.min.js"></script>
-<![endif]--> 
-<script src="/metronic/assets/plugins/jquery.min.js"></script>
-<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
-<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
-<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
-<script src="/metronic/assets/corporate/scripts/layout.js"></script>
-<script src="/js/wow.min.js"></script>
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
+  </section>
 
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Seniex</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/blog">
+                
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Seniex</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.2.2</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
 
 <script type="text/javascript">
-    jQuery(document).ready(function() {
-        Layout.init();    
-        Layout.initOWL();
-        Layout.initTwitter();
-        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-        Layout.initNavScrolling(); 
-	new WOW().init();
-    });
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
-<!-- END CORE PLUGINS -->
-
-<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
 
 
 
@@ -643,15 +652,442 @@
 
 
 
-<!-- END PAGE-SPECIFIC PLUGINS --> 
-
-<!-- BEGIN INTEGRATIONS -->
 
 
 
 
 
-<!-- END INTEGRATIONS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
